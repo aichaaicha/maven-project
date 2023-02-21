@@ -14,6 +14,7 @@ pipeline {
         }
         stage ('Deploy to staging env') {
             steps {
+                echo 'start deployment'
                 buil job: 'deploy-to-staging'
             }
         }
