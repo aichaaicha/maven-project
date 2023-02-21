@@ -12,5 +12,10 @@ pipeline {
                 }
             }
         }
+        stage ('Deploy to staging env') {
+            steps {
+                buil job: 'deploy-to-staging'
+            }
+        }
     }
 }
